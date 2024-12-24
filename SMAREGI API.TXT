@@ -1,0 +1,10 @@
+este link es donde se configura las opciones de api dentro de smaregi
+https://www1.smaregi.jp/control/configuration/webapi/
+
+Contract ID:skh095g7
+URL: https://webapi.smaregi.jp/access/
+Access Token: 6c25420ffbb731a5b9a7a3da746d44f5
+
+
+
+119.93.147.243,122.219.45.178,49.145.166.121,49.147.196.247,49.147.202.240,49.145.175.194,49.145.167.56,49.145.100.223,52.243.39.89,61.192.66.34

@@ -1,0 +1,58 @@
+services:
+  db-blfmaster:
+    container_name: db-blfmaster
+    image: mysql:8.0
+    platform: linux/x86_64
+    environment:
+      MYSQL_DATABASE: blfmaster
+      MYSQL_ROOT_PASSWORD: blf123
+      MYSQL_PORT: '3310'    
+    ports:
+      - "3310:3306"
+    volumes:
+      - blfmaster_datos:/var/lib/mysql
+    networks:
+      - mynetwork-blfmaster
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+# Servicio de phpMyAdmin
+  phpmyadmin-blfmaster:
+    container_name: phpmyadmin-blfmaster
+    image: phpmyadmin/phpmyadmin
+    platform: linux/x86_64
+    environment:
+      PMA_HOST: db-blfmaster
+      MYSQL_ROOT_PASSWORD: blf123      
+      ENABLE_SSL: 1
+    ports:
+      - "3200:80"    
+    networks:
+      - mynetwork-blfmaster    
+  
+  streamlit:
+    container_name: streamlit-blfmaster
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.streamlit
+    ports:
+      - "8281:8281"
+    volumes:
+      - ./src:/app/src
+    environment:
+      - STREAMLIT_SERVER_RUN_ON_SAVE=true
+      - STREAMLIT_SERVER_PORT=8281
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+    networks:
+      - mynetwork-blfmaster
+    depends_on:
+      - db-blfmaster
+      
+volumes:
+ blfmaster_datos:
+networks:
+  mynetwork-blfmaster:
+    driver: bridge

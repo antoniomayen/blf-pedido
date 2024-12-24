@@ -1,0 +1,40 @@
+sumareji：
+https://accounts.smaregi.jp
+ID : store@business-leather.com
+pass : blfall67
+→password cambia cada mes
+
+POS
+SELECCIONAR LAS TEINAS excepto marcadas [休止] 
+
+FRC y 19 tiendas
+
+
+**FRC**[倉庫] 福岡オフィス在庫.     
+BUSINESS LEATHER FACTORY 天神店
+BUSINESS LEATHER FACTORY 大阪なんば店
+BUSINESS LEATHER FACTORY 熊本店
+BUSINESS LEATHER FACTORY 名古屋店
+BUSINESS LEATHER FACTORY 広島空港店
+BUSINESS LEATHER FACTORY 宮崎店
+BUSINESS LEATHER FACTORY 横浜店
+BUSINESS LEATHER FACTORY 札幌店
+BUSINESS LEATHER FACTORY 大分店
+BUSINESS LEATHER FACTORY 那覇空港店
+BUSINESS LEATHER FACTORY 東京駅八重洲店
+BUSINESS LEATHER FACTORY 大阪エキスポシティ店
+BUSINESS LEATHER FACTORY大阪梅田店
+BUSINESS LEATHER FACTORY神戸三宮店
+BUSINESS LEATHER FACTORYイオンモール福岡店
+BUSINESS LEATHER FACTORY 大宮店
+BUSINESS LEATHER FACTORY　品川店
+BUSINESS LEATHER FACTORY長崎店
+BUSINESS LEATHER FACTORY函館蔦屋書店
+seleccionar 20
+
+sidemenu 在庫>在庫情報>在庫一覧
+
+click-> 検索オプション
+click-> 在庫数　1〜
+click-> この条件で検索する
+click-> CSVダウンロード

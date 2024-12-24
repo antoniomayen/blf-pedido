@@ -1,0 +1,14 @@
+FROM python:3.9-buster
+
+WORKDIR /app
+
+# Copiar requirements.txt desde la carpeta docker
+COPY docker/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copiar el código fuente
+COPY src/ ./src/
+
+EXPOSE 8281
+
+CMD ["streamlit", "run", "src/main.py", "--server.port=8281", "--server.address=0.0.0.0", "--server.runOnSave=true"]

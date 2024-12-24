@@ -1,0 +1,52 @@
+tu_proyecto/
+├── src/
+│   ├── config/
+│   │   ├── database.py         # Configuración MySQL
+│   │   └── settings.py         # Otras configuraciones
+│   │
+│   ├── data/
+│   │   ├── queries/
+│   │   │   ├── sales_contract.py     # Consultas de los contratos de venta
+│   │   │   ├── inventory_queries.py  # Consultas de inventario
+│   │   │   └── reports_queries.py    # Consultas para reportes
+│   │   └── database.py         # Clase base de conexión
+│   │
+│   ├── logic/                  # Lógica de negocio
+│   │   ├── sales_contarct_logic.py      # Cálculos y procesos de ventas
+│   │   ├── inventory_logic.py   # Lógica de inventario
+│   │   ├── reports/
+│   │   │   ├── sales_contract_report.py      # Lógica reportes de ventas
+│   │   │   ├── inventory_report.py   # Lógica reportes de inventario
+│   │   │   └── performance_report.py # Lógica reportes de rendimiento
+│   │   └── validations.py      # Validaciones comunes
+│   │
+│   ├── pages/                  # Páginas principales
+│   │   ├── home.py
+│   │   ├── master_sheet.py
+│   │   ├── inventory.py
+│   │   └── reports/
+│   │       ├── sales_contract.py
+│   │       ├── inventory_report.py
+│   │       └── monthly_report.py
+│   │
+│   ├── components/             # Componentes reutilizables
+│   │   ├── navigation/
+│   │   │   ├── navbar.py
+│   │   │   └── menu.py
+│   │   ├── forms/
+│   │   │   ├── sales_contract_forms.py
+│   │   │   └── filters.py
+│   │   ├── tables/
+│   │   │   ├── data_table.py
+│   │   │   └── summary_table.py
+│   │   └── charts/
+│   │       ├── bar_chart.py
+│   │       └── line_chart.py
+│   │
+│   └── utils/
+│       ├── date_helpers.py
+│       ├── formatters.py
+│       └── excel_export.py
+│
+├── main.py
+└── requirements.txt
